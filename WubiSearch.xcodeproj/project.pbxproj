@@ -49,7 +49,6 @@
 		4E93AEEF06B38F7236FB64E6 /* Pods_WubiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WubiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		624424A0E07A72B643D5AA46 /* Pods-WubiSearchTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearchTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearchTodayExtension/Pods-WubiSearchTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
 		AECCCAB9D4B516D5C4C40B88 /* Pods-WubiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		B40608D81F4C3FF700BAD754 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		B422CFC11F3B3E0C0081A92A /* WubiSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WubiSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422CFC41F3B3E0C0081A92A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B422CFC61F3B3E0C0081A92A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 		B422CFB81F3B3E0C0081A92A = {
 			isa = PBXGroup;
 			children = (
-				B40608D81F4C3FF700BAD754 /* MyPlayground.playground */,
 				B422CFC31F3B3E0C0081A92A /* WubiSearch */,
 				B422CFDE1F3B3EF00081A92A /* WubiSearchTodayExtension */,
 				B422CFDB1F3B3EF00081A92A /* Frameworks */,

@@ -20,7 +20,6 @@ fileprivate extension String {
             let gbkBytes = [UInt8](gbkData)
             return NSString(format: "%%%X%%%X", gbkBytes[0], gbkBytes[1]) as String
         }
-        
     }
     
     init?(gbkData: Data) {
@@ -34,6 +33,20 @@ fileprivate extension String {
     }
 }
 
+fileprivate extension Array {
+    subscript(safe index: Int) -> Element? {
+        if index >= 0 && index < self.count {
+            return self[index]
+        } else {
+            return nil
+        }
+    }
+}
+
+enum WubiSearchError: Error {
+    case cannotFindWubiCode
+}
+
 class TodayViewController: UIViewController, NCWidgetProviding {
     var searchCharacter: String!
         
@@ -44,7 +57,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var searchButton: UIButton!
     @IBAction func fetchData() {
-        searchButton.isHidden = true
         firstly { () -> URLDataPromise in
             let url = URL(string: "http://www.52wubi.com/wbbmcx/search.php")!
             var request = URLRequest(url: url)
@@ -55,11 +67,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             let str = String(gbkData: data)
             let parseStr = try! HTMLDocument(string: str!)
             let wubiCode = parseStr.body?
-                .children[2].children[3].children[0].children[1]
-                .children[3].children[0].children[1].children[2].stringValue
+                .children[safe: 2]?.children[safe: 3]?.children[safe: 0]?.children[safe: 1]?
+                .children[safe: 3]?.children[safe: 0]?.children[safe: 1]?.children[safe: 2]?.stringValue
+            if wubiCode == nil {
+                throw WubiSearchError.cannotFindWubiCode
+            }
             DispatchQueue.main.async {
+                self.searchButton.isHidden = true
                 self.characterView.isHidden = false
-                self.speakLabel.isHidden = false
                 self.speakLabel.text = wubiCode!
             }
             let wubiImageURL = "http://www.52wubi.com/wbbmcx/" + (parseStr.body?
@@ -72,10 +87,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }.then { (data: Data) -> Void in
             let image = UIImage(data: data)
             DispatchQueue.main.async {
-                self.speakImage.isHidden = false
                 self.speakImage.image = image
             }
-        }.catch { _ in }
+        }.catch { error in
+            if let error = error as? WubiSearchError {
+                if error == .cannotFindWubiCode {
+                    DispatchQueue.main.async {
+                        self.searchButton.isEnabled = false
+                        self.searchButton.setTitle("该汉字目前无法查询到五笔编码", for: .normal)
+                    }
+                }
+            } else {
+                print(error)
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -91,6 +116,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             completionHandler(NCUpdateResult.newData)
             searchButton.setTitle("复制单个汉字拷贝以查询", for: .normal)
             return
+        }
+        for (_, value) in (character?.characters.enumerated())! {
+            if value <= "\u{4E00}" || value >= "\u{9FA5}" {
+                completionHandler(NCUpdateResult.newData)
+                searchButton.setTitle("复制单个汉字拷贝以查询", for: .normal)
+                return
+            }
         }
         searchButton.isEnabled = true
         searchCharacter = character!.stringWithGBKPercentEncode
