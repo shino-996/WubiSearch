@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WubiSearchTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B422CFC01F3B3E0C0081A92A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B422CFD91F3B3EF00081A92A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

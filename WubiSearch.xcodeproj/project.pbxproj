@@ -7,14 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		199205527076DB75F6899185 /* Pods_WubiSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E93AEEF06B38F7236FB64E6 /* Pods_WubiSearch.framework */; };
+		6E46A087D62B6369A887537A /* Pods_WubiSearchTodayExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73A973943B73EE93C9EC6D7 /* Pods_WubiSearchTodayExtension.framework */; };
 		B422CFC51F3B3E0C0081A92A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422CFC41F3B3E0C0081A92A /* AppDelegate.swift */; };
 		B422CFC71F3B3E0C0081A92A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422CFC61F3B3E0C0081A92A /* ViewController.swift */; };
 		B422CFCA1F3B3E0C0081A92A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B422CFC81F3B3E0C0081A92A /* Main.storyboard */; };
 		B422CFCC1F3B3E0C0081A92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B422CFCB1F3B3E0C0081A92A /* Assets.xcassets */; };
 		B422CFCF1F3B3E0C0081A92A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B422CFCD1F3B3E0C0081A92A /* LaunchScreen.storyboard */; };
+		B422CFDD1F3B3EF00081A92A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B422CFDC1F3B3EF00081A92A /* NotificationCenter.framework */; };
+		B422CFE01F3B3EF00081A92A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B422CFDF1F3B3EF00081A92A /* TodayViewController.swift */; };
+		B422CFE31F3B3EF00081A92A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B422CFE11F3B3EF00081A92A /* MainInterface.storyboard */; };
+		B422CFE71F3B3EF00081A92A /* WubiSearchTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B422CFDA1F3B3EF00081A92A /* WubiSearchTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B422CFE51F3B3EF00081A92A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B422CFB91F3B3E0C0081A92A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B422CFD91F3B3EF00081A92A;
+			remoteInfo = WubiSearchTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B422CFEB1F3B3EF00081A92A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B422CFE71F3B3EF00081A92A /* WubiSearchTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		45ABE477739B5E10AA8B3134 /* Pods-WubiSearchTodayExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearchTodayExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearchTodayExtension/Pods-WubiSearchTodayExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		4E93AEEF06B38F7236FB64E6 /* Pods_WubiSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WubiSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		624424A0E07A72B643D5AA46 /* Pods-WubiSearchTodayExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearchTodayExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearchTodayExtension/Pods-WubiSearchTodayExtension.release.xcconfig"; sourceTree = "<group>"; };
+		AECCCAB9D4B516D5C4C40B88 /* Pods-WubiSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		B40608D81F4C3FF700BAD754 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		B422CFC11F3B3E0C0081A92A /* WubiSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WubiSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B422CFC41F3B3E0C0081A92A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B422CFC61F3B3E0C0081A92A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +57,13 @@
 		B422CFCB1F3B3E0C0081A92A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B422CFCE1F3B3E0C0081A92A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B422CFD01F3B3E0C0081A92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B422CFDA1F3B3EF00081A92A /* WubiSearchTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WubiSearchTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B422CFDC1F3B3EF00081A92A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		B422CFDF1F3B3EF00081A92A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		B422CFE21F3B3EF00081A92A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		B422CFE41F3B3EF00081A92A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73A973943B73EE93C9EC6D7 /* Pods_WubiSearchTodayExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WubiSearchTodayExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DFC9F3E37C968908C03B7 /* Pods-WubiSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WubiSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +71,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199205527076DB75F6899185 /* Pods_WubiSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B422CFD71F3B3EF00081A92A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B422CFDD1F3B3EF00081A92A /* NotificationCenter.framework in Frameworks */,
+				6E46A087D62B6369A887537A /* Pods_WubiSearchTodayExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +90,12 @@
 		B422CFB81F3B3E0C0081A92A = {
 			isa = PBXGroup;
 			children = (
+				B40608D81F4C3FF700BAD754 /* MyPlayground.playground */,
 				B422CFC31F3B3E0C0081A92A /* WubiSearch */,
+				B422CFDE1F3B3EF00081A92A /* WubiSearchTodayExtension */,
+				B422CFDB1F3B3EF00081A92A /* Frameworks */,
 				B422CFC21F3B3E0C0081A92A /* Products */,
+				D2F75F3105148221431CB619 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B422CFC11F3B3E0C0081A92A /* WubiSearch.app */,
+				B422CFDA1F3B3EF00081A92A /* WubiSearchTodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +121,37 @@
 			path = WubiSearch;
 			sourceTree = "<group>";
 		};
+		B422CFDB1F3B3EF00081A92A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B422CFDC1F3B3EF00081A92A /* NotificationCenter.framework */,
+				4E93AEEF06B38F7236FB64E6 /* Pods_WubiSearch.framework */,
+				B73A973943B73EE93C9EC6D7 /* Pods_WubiSearchTodayExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B422CFDE1F3B3EF00081A92A /* WubiSearchTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B422CFDF1F3B3EF00081A92A /* TodayViewController.swift */,
+				B422CFE11F3B3EF00081A92A /* MainInterface.storyboard */,
+				B422CFE41F3B3EF00081A92A /* Info.plist */,
+			);
+			path = WubiSearchTodayExtension;
+			sourceTree = "<group>";
+		};
+		D2F75F3105148221431CB619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AECCCAB9D4B516D5C4C40B88 /* Pods-WubiSearch.debug.xcconfig */,
+				CE5DFC9F3E37C968908C03B7 /* Pods-WubiSearch.release.xcconfig */,
+				45ABE477739B5E10AA8B3134 /* Pods-WubiSearchTodayExtension.debug.xcconfig */,
+				624424A0E07A72B643D5AA46 /* Pods-WubiSearchTodayExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,18 +159,42 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B422CFD31F3B3E0C0081A92A /* Build configuration list for PBXNativeTarget "WubiSearch" */;
 			buildPhases = (
+				28EFE160BDB8113AD630699B /* [CP] Check Pods Manifest.lock */,
 				B422CFBD1F3B3E0C0081A92A /* Sources */,
 				B422CFBE1F3B3E0C0081A92A /* Frameworks */,
 				B422CFBF1F3B3E0C0081A92A /* Resources */,
+				B422CFEB1F3B3EF00081A92A /* Embed App Extensions */,
+				27CFA8A9F5B171EE809000BD /* [CP] Embed Pods Frameworks */,
+				422723855826C1534EA3C1D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B422CFE61F3B3EF00081A92A /* PBXTargetDependency */,
 			);
 			name = WubiSearch;
 			productName = WubiSearch;
 			productReference = B422CFC11F3B3E0C0081A92A /* WubiSearch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B422CFD91F3B3EF00081A92A /* WubiSearchTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B422CFE81F3B3EF00081A92A /* Build configuration list for PBXNativeTarget "WubiSearchTodayExtension" */;
+			buildPhases = (
+				0D043EC0414D9FEDBEC88E10 /* [CP] Check Pods Manifest.lock */,
+				B422CFD61F3B3EF00081A92A /* Sources */,
+				B422CFD71F3B3EF00081A92A /* Frameworks */,
+				B422CFD81F3B3EF00081A92A /* Resources */,
+				B599975DBB2B79767A0ADBFC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WubiSearchTodayExtension;
+			productName = WubiSearchTodayExtension;
+			productReference = B422CFDA1F3B3EF00081A92A /* WubiSearchTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +207,11 @@
 				ORGANIZATIONNAME = shino;
 				TargetAttributes = {
 					B422CFC01F3B3E0C0081A92A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = R374EG3MSW;
+						ProvisioningStyle = Automatic;
+					};
+					B422CFD91F3B3EF00081A92A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = R374EG3MSW;
 						ProvisioningStyle = Automatic;
@@ -115,6 +232,7 @@
 			projectRoot = "";
 			targets = (
 				B422CFC01F3B3E0C0081A92A /* WubiSearch */,
+				B422CFD91F3B3EF00081A92A /* WubiSearchTodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,7 +248,104 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B422CFD81F3B3EF00081A92A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B422CFE31F3B3EF00081A92A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D043EC0414D9FEDBEC88E10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WubiSearchTodayExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27CFA8A9F5B171EE809000BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fuzi/Fuzi.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fuzi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28EFE160BDB8113AD630699B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WubiSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		422723855826C1534EA3C1D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WubiSearch/Pods-WubiSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B599975DBB2B79767A0ADBFC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WubiSearchTodayExtension/Pods-WubiSearchTodayExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B422CFBD1F3B3E0C0081A92A /* Sources */ = {
@@ -142,7 +357,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B422CFD61F3B3EF00081A92A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B422CFE01F3B3EF00081A92A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B422CFE61F3B3EF00081A92A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B422CFD91F3B3EF00081A92A /* WubiSearchTodayExtension */;
+			targetProxy = B422CFE51F3B3EF00081A92A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B422CFC81F3B3E0C0081A92A /* Main.storyboard */ = {
@@ -159,6 +390,14 @@
 				B422CFCE1F3B3E0C0081A92A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B422CFE11F3B3EF00081A92A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B422CFE21F3B3EF00081A92A /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,10 +498,13 @@
 		};
 		B422CFD41F3B3E0C0081A92A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AECCCAB9D4B516D5C4C40B88 /* Pods-WubiSearch.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R374EG3MSW;
 				INFOPLIST_FILE = WubiSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = space.shino.WubiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,13 +514,46 @@
 		};
 		B422CFD51F3B3E0C0081A92A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5DFC9F3E37C968908C03B7 /* Pods-WubiSearch.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R374EG3MSW;
 				INFOPLIST_FILE = WubiSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = space.shino.WubiSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B422CFE91F3B3EF00081A92A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45ABE477739B5E10AA8B3134 /* Pods-WubiSearchTodayExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R374EG3MSW;
+				INFOPLIST_FILE = WubiSearchTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.shino.WubiSearch.WubiSearchTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B422CFEA1F3B3EF00081A92A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624424A0E07A72B643D5AA46 /* Pods-WubiSearchTodayExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = R374EG3MSW;
+				INFOPLIST_FILE = WubiSearchTodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = space.shino.WubiSearch.WubiSearchTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -302,6 +577,16 @@
 				B422CFD51F3B3E0C0081A92A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B422CFE81F3B3EF00081A92A /* Build configuration list for PBXNativeTarget "WubiSearchTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B422CFE91F3B3EF00081A92A /* Debug */,
+				B422CFEA1F3B3EF00081A92A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
